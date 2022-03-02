@@ -28,4 +28,6 @@ pip3 install -U -r proxy-scraper-checker/requirements.txt
 
 python3 proxy-scraper-checker/main.py
 
+mkdir MHDDoS/files/proxies
+
 rm MHDDoS/files/proxies/proxy5.txt & cp proxies/socks5.txt MHDDoS/files/proxies/proxy5.txt
