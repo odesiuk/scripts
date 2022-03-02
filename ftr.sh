@@ -26,6 +26,6 @@ pip3 install -U -r MHDDoS/requirements.txt
 git clone https://github.com/monosans/proxy-scraper-checker.git
 pip3 install -U -r proxy-scraper-checker/requirements.txt 
 
-python3 proxyscrape-checker/main.py
+python3 proxy-scraper-checker/main.py
 
 rm MHDDoS/files/proxies/proxy5.txt & cp proxies/socks5.txt MHDDoS/files/proxies/proxy5.txt
