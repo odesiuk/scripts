@@ -23,7 +23,7 @@ mkdir ddos && cd ddos
 git clone https://github.com/MHProDev/MHDDoS.git
 pip3 install -U -r MHDDoS/requirements.txt 
 
-git clone https://github.com:monosans/proxy-scraper-checker.git
+git clone https://github.com/monosans/proxy-scraper-checker.git
 pip3 install -U -r proxy-scraper-checker/requirements.txt 
 
 python3.10 proxyscrape-checker/main.py
