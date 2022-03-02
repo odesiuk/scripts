@@ -18,6 +18,10 @@ sudo make altinstall
 
 sudo apt install python3-pip
 
+pip3 install --upgrade pip
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 mkdir ddos && cd ddos 
 
 git clone https://github.com/MHProDev/MHDDoS.git
