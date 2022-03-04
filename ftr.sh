@@ -2,18 +2,11 @@ cd ~
 
 sudo apt update
 
-sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
+sudo apt install software-properties-common
 
-wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
+sudo add-apt-repository ppa:deadsnakes/ppa
 
-tar -xf Python-3.10.*.tgz
-
-cd Python-3.10.*/
-./configure --enable-optimizations
-
-make -j 4
-
-sudo make altinstall
+sudo apt install python3.9
 
 sudo apt install python3-pip
 
