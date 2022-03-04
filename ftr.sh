@@ -8,7 +8,6 @@ wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
 
 tar -xf Python-3.10.*.tgz
 
-
 cd Python-3.10.*/
 ./configure --enable-optimizations
 
@@ -21,6 +20,11 @@ sudo apt install python3-pip
 pip3 install --upgrade pip
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+agents_to_install.csv && \
+echo '"projects/ftr-express/zones/europe-west3-c/instances/instance-1","[{""type"":""ops-agent""}]"' >> agents_to_install.csv && \
+curl -sSO https://dl.google.com/cloudagents/mass-provision-google-cloud-ops-agents.py && \
+python3 mass-provision-google-cloud-ops-agents.py --file agents_to_install.csv
 
 mkdir ddos && cd ddos 
 
